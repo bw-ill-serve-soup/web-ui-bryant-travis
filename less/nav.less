@@ -1,24 +1,73 @@
-nav {
-    display: flex;
-    color: #EEDAC3;
-    width: 100%;
-    justify-content: space-between;
-    align-content: center;
-    h2{
-        text-shadow: 2px 2px black;
-    }
-    .navButtons {
-        width: 30%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        &:hover{
-            text-decoration: none;
-            color: white;
-        }
-    }
+//nav {
+//    display: flex;
+//    color: #EEDAC3;
+//    width: 100%;
+//    justify-content: space-between;
+//    align-content: center;
+//    h2{
+//        text-shadow: 2px 2px black;
+//    }
+//    .navButtons {
+//        width: 30%;
+//        display: flex;
+//        justify-content: flex-end;
+//        align-items: center;
+//    }
+//    a {
+//        text-decoration: none;
+//        color: black;
+//        &:hover{
+//            text-decoration: none;
+//            color: white;
+//        }
+//    }
+//}
+body{
+  text-align: center;
 }
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+.button-signUp{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  @media screen and @phone{
+    font-size: .8rem;
+  }
+}
+.button-signUp:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.button-signUp:before,.button-signUp:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.button-signUp:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.button-signUp:hover:before,.button-signUp:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+

@@ -175,6 +175,7 @@ img {
 body {
   margin: 0 auto;
   width: 80%;
+  font-size: 62.5%;
 }
 #tracking {
   background-color: #FFECE3;
@@ -292,29 +293,57 @@ body {
 .second img {
   border-radius: 10px;
 }
-nav {
-  display: flex;
-  color: #EEDAC3;
+body {
+  text-align: center;
+}
+body:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.button-signUp {
+  background: #1AAB8A;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+@media screen and (max-width: 500px) {
+  .button-signUp {
+    font-size: 0.8rem;
+  }
+}
+.button-signUp:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+.button-signUp:before,
+.button-signUp:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+.button-signUp:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.button-signUp:hover:before,
+.button-signUp:hover:after {
   width: 100%;
-  justify-content: space-between;
-  align-content: center;
-}
-nav h2 {
-  text-shadow: 2px 2px black;
-}
-nav .navButtons {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav a {
-  text-decoration: none;
-  color: black;
-}
-nav a:hover {
-  text-decoration: none;
-  color: white;
+  transition: 800ms ease all;
 }
 .ctaWrapper {
   width: 100%;
@@ -328,9 +357,18 @@ nav a:hover {
   background-size: cover;
   height: 75vh;
 }
+.ctaWrapper h2 {
+  color: #EEDAC3;
+  text-shadow: 2px 2px black;
+}
 @media (max-width: 800px) {
   .ctaWrapper {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ctaWrapper {
+    height: 47vh;
   }
 }
 header {
@@ -354,6 +392,11 @@ header p {
     width: 100%;
   }
 }
+@media screen and (max-width: 500px) {
+  header p {
+    width: 100%;
+  }
+}
 header button {
   margin: 1%;
   border-radius: 10px;
@@ -372,5 +415,58 @@ header button:hover {
   header button {
     height: 2vh;
     width: 20vw;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: #1AAB8A;
+  padding: 2%;
+}
+footer h3 {
+  font-size: 1.8rem;
+  color: #EEDAC3;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 500px) {
+  footer h3 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+footer .ISS {
+  margin-left: 3%;
+  font-size: 1.8rem;
+}
+footer .fa-instagram,
+footer .fa-twitter-square {
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer .fa-instagram,
+  footer .fa-twitter-square {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+footer .fa-facebook-f {
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer .fa-facebook-f {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+footer ul li {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer ul li {
+    font-size: 1rem;
+    cursor: pointer;
   }
 }

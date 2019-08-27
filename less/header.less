@@ -9,8 +9,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
+    h2{
+        color: @mainfont;
+        text-shadow: 2px 2px black;
+    }
     @media @tablet{
         height: 30vh;
+    }
+    @media screen and @phone{
+        height: 47vh;
     }
 }
 
@@ -29,6 +36,9 @@ header {
         width: 45%;
         margin: 1%;
         @media @tablet {
+            width: 100%;
+        }
+        @media screen and @phone{
             width: 100%;
         }
     }
