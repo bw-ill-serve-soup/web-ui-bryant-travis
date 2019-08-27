@@ -224,6 +224,11 @@ body:before {
   background-size: cover;
   height: 75vh;
 }
+@media screen and (max-width: 500px) {
+  .ctaWrapper {
+    width: 100%;
+  }
+}
 header {
   display: flex;
   color: #281F3E;
@@ -241,22 +246,66 @@ header p {
   color: #eedac3;
   text-shadow: 2px 2px black;
 }
+@media screen and (max-width: 500px) {
+  header p {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+}
 header h1 {
   color: #eedac3;
   text-shadow: 2px 2px black;
 }
-#tracking {
-  width: 100%;
-  margin: 2%;
-  display: flex;
-  justify-content: space-between;
-}
-#tracking .headingP {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.footer {
+footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  background: #1AAB8A;
+  padding: 2%;
+}
+footer h3 {
+  font-size: 1.8rem;
+  color: #eedac3;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 500px) {
+  footer h3 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+footer .ISS {
+  margin-left: 3%;
+  font-size: 1.8rem;
+}
+footer .fa-instagram,
+footer .fa-twitter-square {
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer .fa-instagram,
+  footer .fa-twitter-square {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+footer .fa-facebook-f {
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer .fa-facebook-f {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+footer ul li {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  footer ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
 }

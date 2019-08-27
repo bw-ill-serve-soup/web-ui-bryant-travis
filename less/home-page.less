@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 75vh;
+  @media screen and @phone{
+    width: 100%;
+  }
 }
 
 header {
@@ -26,7 +29,11 @@ header {
     width: 45%;
     margin: 1%;
     color:@Nav-p;
-    text-shadow: 2px 2px black
+    text-shadow: 2px 2px black;
+    @media screen and @phone{
+      font-size: .9rem;
+      width: 80%;
+    }
   }
 
   h1{
@@ -46,15 +53,15 @@ header {
   //  justify-content: center;
   //}
 }
-#tracking {
-  width: 100%;
-  margin: 2%;
-  display: flex;
-  justify-content: space-between;
-  .headingP {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-}
+//#tracking {
+//  width: 100%;
+//  margin: 2%;
+//  display: flex;
+//  justify-content: space-between;
+//  .headingP {
+//    display: flex;
+//    flex-direction: column;
+//    width: 50%;
+//  }
+//}
 

@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa45545f-c223-4e8b-b202-836b2e26ac4b" name="Default Changelist" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/images/homecooking.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/professional.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/less/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/home-page.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/home-page.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/less/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/less/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/less/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/less/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/nav-links.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/nav-links.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/resets.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/resets.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/variables.less" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +30,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1Q1AVRHUmXM2ZXDXeX0162kASk2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -46,7 +41,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/LICENSE" />
   </component>
   <component name="RunDashboard">
@@ -96,7 +91,8 @@
       <workItem from="1566919432800" duration="8021000" />
       <workItem from="1566927561723" duration="57000" />
       <workItem from="1566927753030" duration="55000" />
-      <workItem from="1566927854921" duration="756000" />
+      <workItem from="1566927854921" duration="1511000" />
+      <workItem from="1566929381664" duration="8263000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1566852322117</created>
@@ -127,5 +123,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web_ui_bryant_travis$index_html__1_.dat" NAME="index.html (1) Coverage Results" MODIFIED="1566942279615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
