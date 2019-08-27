@@ -1,0 +1,138 @@
+p {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    font-family: 'Muli', sans-serif;
+    @media @tablet {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1{
+    font-size: 4rem;
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1%;
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin: 1%;
+    font-weight: bold;
+    @media @tablet {
+        font-size: 1.2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#tracking {
+    background-color: @oddcolor;
+    width: 100%;
+    margin: 2% 0;
+    .sectionFlex();
+    @media @tablet {
+        flex-direction: column;
+    }
+    .headingP {
+        .headingPStyle();
+        @media @tablet {
+            h2 {
+                text-align: center;
+            }
+            width: 100%;
+        }
+    }
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+#maintaining {
+    // background-color: #FFF9F5;
+    background-color: @evencolor;
+    width: 100%;
+    margin: 2% 0;
+    .sectionFlex();
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+    .headingP {
+        .headingPStyle();
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+.whoItsFor {
+    display: flex;
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    .first {
+        background-color: @oddcolor;
+        .sectionFlex();
+        @media @tablet {
+            flex-direction: column;
+        }
+        .headingP {
+            .headingPStyle();
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+.second {
+    // background-color: #FFF9F5;
+    background-color: @evencolor;
+    .sectionFlex();
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+    .headingP {
+        .headingPStyle();
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    img {
+        border-radius: 10px;
+    }
+}
