@@ -1,0 +1,53 @@
+.ctaWrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../imgs/background.jpg');
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    @media @tablet{
+        height: 30vh;
+    }
+}
+
+header {
+    display: flex;
+    color: @mainfont;
+    text-shadow: 2px 2px black;
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 10%;
+    }
+    p {
+        width: 45%;
+        margin: 1%;
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    button {
+        margin: 1%;
+        border-radius: 10px;
+        height: 5vh;
+        width: 20vw;
+        margin-right: 3%;
+        border-color: black;
+        background-color: @mainfont;
+        align-self: center;
+        &:hover {
+            background-color: @evencolor;
+            color: white;
+        }
+        @media @tablet {
+            height: 2vh;
+            width: 20vw;
+        }
+    }
+}

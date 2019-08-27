@@ -1,59 +1,11 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/************ Styles Start here ***********/
-
 p {
     line-height: 1.6;
     font-size: 1.4rem;
     font-family: 'Muli', sans-serif;
+    @media @tablet {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 h1, h2, h3 {
@@ -62,17 +14,30 @@ h1, h2, h3 {
 
 h1{
     font-size: 4rem;
+    @media @tablet {
+        font-size: 2.5rem;
+    }
 }
 
 h2 {
     font-size: 2rem;
     margin: 1%;
+    @media @tablet {
+        font-size: 1.5rem;
+    }
 }
 
 h4 {
     font-size: 1.4rem;
     margin: 1%;
     font-weight: bold;
+    @media @tablet {
+        font-size: 1.2rem;
+    }
+}
+
+img {
+    max-width: 100%;
 }
 
 body {
@@ -80,68 +45,22 @@ body {
     width: 80%;
 }
 
-.ctaWrapper {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('../imgs/background.jpg');
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-}
-
-nav {
-    display: flex;
-    color: #E1D1C7;
-    width: 100%;
-    justify-content: space-between;
-    align-content: center;
-    .navButtons {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-}
-
-header {
-    display: flex;
-    color: #eedac3;
-    text-shadow: 2px 2px black;
-    .cta {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5% 10%;
-    }
-    p {
-        width: 45%;
-        margin: 1%;
-    }
-    button {
-        margin: 1%;
-        border-radius: 10px;
-        height: 5vh;
-        width: 20vw;
-        margin-right: 3%;
-        align-self: center;
-    }
-}
-
 #tracking {
-    background-color: #FFECE3;
+    background-color: @oddcolor;
     width: 100%;
-    margin: 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .headingP {
-        display: flex;
+    margin: 2% 0;
+    .sectionFlex();
+    @media @tablet {
         flex-direction: column;
-        width: 50%;
+    }
+    .headingP {
+        .headingPStyle();
+        @media @tablet {
+            h2 {
+                text-align: center;
+            }
+            width: 100%;
+        }
     }
     img {
         border-radius: 10px;
@@ -151,16 +70,19 @@ header {
 
 #maintaining {
     // background-color: #FFF9F5;
-    background-color: #b39789;
+    background-color: @evencolor;
     width: 100%;
-    margin: 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 2% 0;
+    .sectionFlex();
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
     .headingP {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        .headingPStyle();
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
     img {
         border-radius: 10px;
@@ -170,15 +92,25 @@ header {
 
 .whoItsFor {
     display: flex;
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
     .first {
-        background-color: #FFECE3;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .headingP {
-            display: flex;
+        background-color: @oddcolor;
+        .sectionFlex();
+        @media @tablet {
             flex-direction: column;
-            width: 50%;
+        }
+        .headingP {
+            .headingPStyle();
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
         img {
             border-radius: 10px;
@@ -188,14 +120,17 @@ header {
 
 .second {
     // background-color: #FFF9F5;
-    background-color: #b39789;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: @evencolor;
+    .sectionFlex();
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
     .headingP {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        .headingPStyle();
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
     img {
         border-radius: 10px;
