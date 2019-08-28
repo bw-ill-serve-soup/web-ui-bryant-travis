@@ -150,13 +150,22 @@ h1 {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 h2 {
   font-size: 2rem;
-  margin: 1%;
 }
 @media (max-width: 800px) {
   h2 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.2rem;
   }
 }
 h4 {
@@ -176,6 +185,11 @@ body {
   margin: 0 auto;
   width: 80%;
   font-size: 62.5%;
+}
+@media (max-width: 800px) {
+  body {
+    width: 90%;
+  }
 }
 #tracking {
   background-color: #FFECE3;
@@ -296,12 +310,6 @@ body {
 body {
   text-align: center;
 }
-body:before {
-  content: '';
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-}
 .button-signUp {
   background: #1AAB8A;
   color: #fff;
@@ -316,6 +324,7 @@ body:before {
 }
 @media screen and (max-width: 500px) {
   .button-signUp {
+    height: 4.5vh;
     font-size: 0.8rem;
   }
 }
@@ -355,7 +364,7 @@ body:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: 65vh;
 }
 .ctaWrapper h2 {
   color: #EEDAC3;
@@ -368,7 +377,17 @@ body:before {
 }
 @media screen and (max-width: 500px) {
   .ctaWrapper {
-    height: 47vh;
+    height: 45vh;
+  }
+}
+@media (max-width: 500px) {
+  .wrap button {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .wrap button {
+    display: none;
   }
 }
 header {
@@ -383,8 +402,18 @@ header .cta {
   align-items: center;
   padding: 5% 10%;
 }
+@media (max-width: 800px) {
+  header .cta {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .cta {
+    padding: 0;
+  }
+}
 header p {
-  width: 45%;
+  width: 75%;
   margin: 1%;
 }
 @media (max-width: 800px) {
@@ -417,6 +446,11 @@ header button:hover {
     width: 20vw;
   }
 }
+@media (max-width: 500px) {
+  header button {
+    width: 30vw;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -438,6 +472,12 @@ footer h3 {
 footer .ISS {
   margin-left: 3%;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 800px) {
+  footer .ISS {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .fa-instagram,
 footer .fa-twitter-square {

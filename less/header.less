@@ -8,7 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
+    height: 65vh;
     h2{
         color: @mainfont;
         text-shadow: 2px 2px black;
@@ -17,7 +17,18 @@
         height: 30vh;
     }
     @media screen and @phone{
-        height: 47vh;
+        height: 45vh;
+    }
+}
+
+.wrap {
+    button {
+        @media @phone {
+            display: none;
+        }
+        @media @tablet {
+            display: none;
+        }
     }
 }
 
@@ -31,9 +42,15 @@ header {
         justify-content: center;
         align-items: center;
         padding: 5% 10%;
+        @media @tablet {
+            padding: 0;
+        }
+        @media screen and @phone{
+            padding: 0;
+        }
     }
     p {
-        width: 45%;
+        width: 75%;
         margin: 1%;
         @media @tablet {
             width: 100%;
@@ -58,6 +75,9 @@ header {
         @media @tablet {
             height: 2vh;
             width: 20vw;
+        }
+        @media @phone {
+            width: 30vw;
         }
     }
 }
