@@ -461,10 +461,12 @@ header button:hover {
   margin: 1%;
   width: 30%;
   position: relative;
+  padding: 0.5%;
 }
-.teamMember img {
-  width: 457 !important;
-  height: 457 !important;
+@media (max-width: 500px) {
+  .teamMember {
+    width: 45%;
+  }
 }
 .teamMember .hover {
   position: absolute;
@@ -477,8 +479,28 @@ header button:hover {
 .teamMember .hover h2 {
   padding-top: 5%;
 }
+@media (max-width: 800px) {
+  .teamMember .hover h2 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .teamMember .hover h2 {
+    font-size: 1rem !important;
+  }
+}
 .teamMember .hover p {
-  margin-top: 25%;
+  margin-top: 20%;
+}
+@media (max-width: 800px) {
+  .teamMember .hover p {
+    margin-top: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .teamMember .hover p {
+    margin-top: 25%;
+  }
 }
 .teamMember:hover .hover {
   opacity: 1;
@@ -486,12 +508,7 @@ header button:hover {
 .teamMember .icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  align-items: flex-end;
 }
 .teamMember .icons .fa-github:hover {
   color: grey;
@@ -499,8 +516,18 @@ header button:hover {
 .teamMember .icons .fa-linkedin-in:hover {
   color: white;
   background-color: blue;
-  padding: 2%;
+  padding: 0 2%;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .teamMember .icons {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .teamMember .icons {
+    font-size: 0.3rem;
+  }
 }
 .teamMember .image {
   display: block;

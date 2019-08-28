@@ -9,9 +9,9 @@
     margin: 1%;
     width: 30%;
     position: relative;
-    img {
-        width: 457 !important;
-        height: 457 !important;
+    padding: .5%;
+    @media @phone {
+        width: 45%;
     }
     .hover {
         position: absolute;
@@ -22,9 +22,21 @@
         transition: .5s ease;
         h2 {
             padding-top: 5%;
+            @media @tablet {
+                font-size: 1rem !important;
+            }
+            @media @phone {
+                font-size: 1rem !important;
+            }
         }
         p{
-            margin-top: 25%;
+            margin-top: 20%;
+            @media @tablet {
+                margin-top: 25%;
+            }
+            @media @phone {
+                margin-top: 25%;
+            }
         }
     }
     &:hover .hover{
@@ -33,20 +45,21 @@
     .icons {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+        align-items: flex-end;
         .fa-github:hover {
             color: grey;
         }
         .fa-linkedin-in:hover {
             color: white;
             background-color: blue;
-            padding: 2%;
+            padding: 0 2%;
             border-radius: 10px;
+        }
+        @media @tablet {
+            font-size: .4rem;
+        }
+        @media @phone {
+            font-size: .3rem;
         }
     }
 }
