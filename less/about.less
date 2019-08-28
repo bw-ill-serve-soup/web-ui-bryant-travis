@@ -1,0 +1,63 @@
+.teamWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teamMember {
+    margin: 1%;
+    width: 30%;
+    position: relative;
+    img {
+        width: 457 !important;
+        height: 457 !important;
+    }
+    .hover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        h2 {
+            padding-top: 5%;
+        }
+        p{
+            margin-top: 25%;
+        }
+    }
+    &:hover .hover{
+        opacity: 1;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        .fa-github:hover {
+            color: grey;
+        }
+        .fa-linkedin-in:hover {
+            color: white;
+            background-color: blue;
+            padding: 2%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.teamMember .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.teamMember:hover .image {
+    opacity: 0.3;
+}
+

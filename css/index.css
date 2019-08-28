@@ -451,6 +451,65 @@ header button:hover {
     width: 30vw;
   }
 }
+.teamWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.teamMember {
+  margin: 1%;
+  width: 30%;
+  position: relative;
+}
+.teamMember img {
+  width: 457 !important;
+  height: 457 !important;
+}
+.teamMember .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.teamMember .hover h2 {
+  padding-top: 5%;
+}
+.teamMember .hover p {
+  margin-top: 25%;
+}
+.teamMember:hover .hover {
+  opacity: 1;
+}
+.teamMember .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.teamMember .icons .fa-github:hover {
+  color: grey;
+}
+.teamMember .icons .fa-linkedin-in:hover {
+  color: white;
+  background-color: blue;
+  padding: 2%;
+  border-radius: 10px;
+}
+.teamMember .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.teamMember:hover .image {
+  opacity: 0.3;
+}
 footer {
   display: flex;
   flex-direction: row;
