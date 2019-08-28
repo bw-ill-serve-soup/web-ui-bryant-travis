@@ -1,27 +1,3 @@
-// nav {
-//    display: flex;
-//    color: #EEDAC3;
-//    width: 100%;
-//    justify-content: space-between;
-//    align-content: center;
-//    h2{
-//        text-shadow: 2px 2px black;
-//    }
-//    .navButtons {
-//        width: 30%;
-//        display: flex;
-//        justify-content: flex-end;
-//        align-items: center;
-//    }
-//    a {
-//        text-decoration: none;
-//        color: black;
-//        &:hover{
-//            text-decoration: none;
-//            color: white;
-//        }
-//    }
-// }
 body{
   text-align: center;
 }
@@ -74,12 +50,15 @@ body{
   }
   @media screen and @phone {
     display: flex;
+    justify-content: space-between;
     .button1{
       display: none;
     }
     .button2{
       padding: 2%;
-     margin-left: 60%;
+    }
+    .btn-warning {
+      border-radius: 5px;
     }
   }
 
@@ -88,7 +67,6 @@ body{
     @media screen and @phone{
       padding: 1%;
       font-size: 1.4rem;
-      width: 70%;
     }
   }
 }

@@ -152,7 +152,7 @@ h1 {
 }
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 h2 {
@@ -362,13 +362,16 @@ body {
 @media screen and (max-width: 500px) {
   .wrap {
     display: flex;
+    justify-content: space-between;
   }
   .wrap .button1 {
     display: none;
   }
   .wrap .button2 {
     padding: 2%;
-    margin-left: 60%;
+  }
+  .wrap .btn-warning {
+    border-radius: 5px;
   }
 }
 .wrap h2 {
@@ -378,7 +381,6 @@ body {
   .wrap h2 {
     padding: 1%;
     font-size: 1.4rem;
-    width: 70%;
   }
 }
 .ctaWrapper {
@@ -404,7 +406,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .ctaWrapper {
-    height: 45vh;
+    height: 50vh;
   }
 }
 header {
@@ -468,11 +470,21 @@ header button:hover {
     width: 30vw;
   }
 }
+@media (max-width: 500px) {
+  .aboutPage {
+    height: 30vh;
+  }
+}
 .teamWrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .greg {
+    transform: translate(50%, 0);
+  }
 }
 .teamMember {
   margin: 1%;
