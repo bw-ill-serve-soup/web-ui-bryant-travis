@@ -26,7 +26,7 @@ body{
   text-align: center;
 }
 .button-signUp{
-  background:#1AAB8A;
+  background: @bajaGreen;
   color:#fff;
   border:none;
   position:relative;
@@ -43,7 +43,7 @@ body{
 }
 .button-signUp:hover{
   background:#fff;
-  color:#1AAB8A;
+  color: @bajaGreen;
 }
 .button-signUp:before,.button-signUp:after{
   content:'';
@@ -52,7 +52,7 @@ body{
   right:0;
   height:2px;
   width:0;
-  background: #1AAB8A;
+  background: @bajaGreen;
   transition:400ms ease all;
 }
 .button-signUp:after{
@@ -61,8 +61,34 @@ body{
   left:0;
   bottom:0;
 }
-.button-signUp:hover:before,.button-signUp:hover:after{
-  width:100%;
-  transition:800ms ease all;
+.button-signUp:hover:before,.button-signUp:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
+.wrap{
+  .btn-warning{
+    background-color: @bajaGreen;
+    border-color: @bajaGreen;
+    color: #ffffff;
+  }
+  @media screen and @phone {
+    display: flex;
+    .button1{
+      display: none;
+    }
+    .button2{
+      padding: 2%;
+     margin-left: 60%;
+    }
+  }
+
+  h2{
+    padding-bottom: 1%;
+    @media screen and @phone{
+      padding: 1%;
+      font-size: 1.4rem;
+      width: 70%;
+    }
+  }
+}

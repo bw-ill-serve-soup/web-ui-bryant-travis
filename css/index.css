@@ -354,6 +354,33 @@ body {
   width: 100%;
   transition: 800ms ease all;
 }
+.wrap .btn-warning {
+  background-color: #1AAB8A;
+  border-color: #1AAB8A;
+  color: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  .wrap {
+    display: flex;
+  }
+  .wrap .button1 {
+    display: none;
+  }
+  .wrap .button2 {
+    padding: 2%;
+    margin-left: 60%;
+  }
+}
+.wrap h2 {
+  padding-bottom: 1%;
+}
+@media screen and (max-width: 500px) {
+  .wrap h2 {
+    padding: 1%;
+    font-size: 1.4rem;
+    width: 70%;
+  }
+}
 .ctaWrapper {
   width: 100%;
   margin: 0;
@@ -378,16 +405,6 @@ body {
 @media screen and (max-width: 500px) {
   .ctaWrapper {
     height: 45vh;
-  }
-}
-@media (max-width: 500px) {
-  .wrap button {
-    display: none;
-  }
-}
-@media (max-width: 800px) {
-  .wrap button {
-    display: none;
   }
 }
 header {
@@ -546,7 +563,8 @@ footer .fa-twitter-square {
 @media screen and (max-width: 500px) {
   footer .fa-instagram,
   footer .fa-twitter-square {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    padding: 4%;
     cursor: pointer;
   }
 }
@@ -555,7 +573,8 @@ footer .fa-facebook-f {
 }
 @media screen and (max-width: 500px) {
   footer .fa-facebook-f {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
+    padding: 4%;
     cursor: pointer;
   }
 }
