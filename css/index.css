@@ -410,9 +410,11 @@ body {
   }
 }
 header {
-  display: flex;
   color: #EEDAC3;
   text-shadow: 2px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .cta {
   display: flex;
@@ -469,6 +471,9 @@ header button:hover {
   header button {
     width: 30vw;
   }
+}
+.aboutPage {
+  margin: 0 auto !important;
 }
 @media (max-width: 500px) {
   .aboutPage {

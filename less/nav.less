@@ -1,70 +1,83 @@
-body{
+body {
   text-align: center;
 }
-.button-signUp{
+
+.button-signUp {
   background: @bajaGreen;
-  color:#fff;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1.6em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-  @media screen and @phone{
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+
+  @media screen and @phone {
     height: 4.5vh;
     font-size: .8rem;
   }
 }
-.button-signUp:hover{
-  background:#fff;
+
+.button-signUp:hover {
+  background: #fff;
   color: @bajaGreen;
 }
-.button-signUp:before,.button-signUp:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
+
+.button-signUp:before,
+.button-signUp:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
   background: @bajaGreen;
-  transition:400ms ease all;
+  transition: 400ms ease all;
 }
-.button-signUp:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+
+.button-signUp:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
-.button-signUp:hover:before,.button-signUp:hover:after {
+
+.button-signUp:hover:before,
+.button-signUp:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
 
-.wrap{
-  .btn-warning{
+.wrap {
+  .btn-warning {
     background-color: @bajaGreen;
     border-color: @bajaGreen;
     color: #ffffff;
   }
+
   @media screen and @phone {
     display: flex;
     justify-content: space-between;
-    .button1{
+
+    .button1 {
       display: none;
     }
-    .button2{
+
+    .button2 {
       padding: 2%;
     }
+
     .btn-warning {
       border-radius: 5px;
     }
   }
 
-  h2{
+  h2 {
     padding-bottom: 1%;
-    @media screen and @phone{
+
+    @media screen and @phone {
       padding: 1%;
       font-size: 1.4rem;
     }

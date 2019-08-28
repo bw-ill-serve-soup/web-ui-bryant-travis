@@ -9,46 +9,59 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 65vh;
-    h2{
+    // text-align: center;
+
+    h2 {
         color: @mainfont;
         text-shadow: 2px 2px black;
     }
-    @media @tablet{
+
+    @media @tablet {
         height: 30vh;
     }
-    @media screen and @phone{
+
+    @media screen and @phone {
         height: 50vh;
     }
 }
 
 
 header {
-    display: flex;
     color: @mainfont;
     text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .cta {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 5% 10%;
+
         @media @tablet {
             padding: 0;
         }
-        @media screen and @phone{
+
+        @media screen and @phone {
             padding: 0;
         }
     }
+
     p {
         width: 75%;
         margin: 1%;
+
         @media @tablet {
             width: 100%;
         }
-        @media screen and @phone{
+
+        @media screen and @phone {
             width: 100%;
         }
     }
+
     button {
         margin: 1%;
         border-radius: 10px;
@@ -58,14 +71,17 @@ header {
         border-color: black;
         background-color: @mainfont;
         align-self: center;
+
         &:hover {
             background-color: @evencolor;
             color: white;
         }
+
         @media @tablet {
             height: 2vh;
             width: 20vw;
         }
+
         @media @phone {
             width: 30vw;
         }
