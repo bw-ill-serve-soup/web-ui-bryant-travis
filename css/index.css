@@ -528,18 +528,21 @@ header button:hover {
     margin-top: 25%;
   }
 }
-.teamMember:hover .hover {
+.teamMember:hover .hover,
+.teamMember:active .hover {
   opacity: 1;
 }
 .teamMember .icons {
   display: flex;
   justify-content: space-around;
 }
-.teamMember .icons .fa-github:hover {
+.teamMember .icons .fa-github:hover,
+.teamMember .icons .fa-github:active {
   color: grey;
   cursor: pointer;
 }
-.teamMember .icons .fa-linkedin-in:hover {
+.teamMember .icons .fa-linkedin-in:hover,
+.teamMember .icons .fa-linkedin-in:active {
   color: white;
   background-color: #0077b5;
   padding: 0 2%;
@@ -561,7 +564,8 @@ header button:hover {
   width: 100%;
   height: auto;
 }
-.teamMember:hover .image {
+.teamMember:hover .image,
+.teamMember:active .image {
   opacity: 0.3;
 }
 .wrap-About h2 {

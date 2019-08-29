@@ -56,21 +56,20 @@
         }
     }
 
-    &:hover .hover {
+    &:hover .hover, &:active .hover {
         opacity: 1;
     }
 
     .icons {
         display: flex;
         justify-content: space-around;
-        // align-items: flex-end;
 
-        .fa-github:hover {
+        .fa-github:hover, .fa-github:active {
             color: grey;
             cursor: pointer;
         }
 
-        .fa-linkedin-in:hover {
+        .fa-linkedin-in:hover, .fa-linkedin-in:active {
             color: white;
             background-color: #0077b5;
             padding: 0 2%;
@@ -91,7 +90,7 @@
         width: 100%;
         height: auto;
     }
-    &:hover .image {
+    &:hover .image, &:active .image {
         opacity: 0.3;
     }
 }
