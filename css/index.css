@@ -641,6 +641,10 @@ footer ul .AboutUs {
   text-decoration: underline;
   color: black;
 }
+footer ul .getStarted {
+  text-decoration: underline;
+  color: black;
+}
 footer ul li {
   font-size: 1.7rem;
   cursor: pointer;
