@@ -571,6 +571,9 @@ header button:hover {
 .teamMember:hover .image {
   opacity: 0.3;
 }
+.wrap-About h2 {
+  padding: 2%;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -621,6 +624,10 @@ footer .fa-facebook-f {
     padding: 4%;
     cursor: pointer;
   }
+}
+footer ul .AboutUs {
+  text-decoration: underline;
+  color: black;
 }
 footer ul li {
   font-size: 1.7rem;
