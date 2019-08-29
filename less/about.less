@@ -1,5 +1,4 @@
 .aboutPage {
-    margin: 0 auto !important;
     @media @phone {
         height: 30vh;
     }
@@ -54,10 +53,6 @@
             @media @tablet {
                 margin-top: 25%;
             }
-
-            @media @phone {
-                margin-top: 25%;
-            }
         }
     }
 
@@ -68,10 +63,11 @@
     .icons {
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        // align-items: flex-end;
 
         .fa-github:hover {
             color: grey;
+            cursor: pointer;
         }
 
         .fa-linkedin-in:hover {
@@ -79,6 +75,7 @@
             background-color: #0077b5;
             padding: 0 2%;
             border-radius: 10px;
+            cursor: pointer;
         }
 
         @media @tablet {
@@ -89,17 +86,16 @@
             font-size: .3rem;
         }
     }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &:hover .image {
+        opacity: 0.3;
+    }
 }
 
-.teamMember .image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.teamMember:hover .image {
-    opacity: 0.3;
-}
 .wrap-About{
     h2{
         padding: 2%;

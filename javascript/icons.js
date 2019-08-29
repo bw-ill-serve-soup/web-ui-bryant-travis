@@ -13,8 +13,8 @@ linkedInIcon[1].addEventListener('click', e => window.open('https://www.linkedin
 githubIcon[2].addEventListener('click', e => window.open('https://github.com/BryantErwin', '_blank'));
 
 // Pere
-// githubIcon[3].addEventListener('click', e => window.open('https://github.com/', '_blank'));
-// linkedInIcon[3].addEventListener('click', e => window.open('www.linkedin.com/in/', '_blank'));
+githubIcon[3].addEventListener('click', e => window.open('https://github.com/petrussola/', '_blank'));
+linkedInIcon[2].addEventListener('click', e => window.open('https://www.linkedin.com/in/peresola/', '_blank'));
 
 // Zach
 githubIcon[4].addEventListener('click', e => window.open('https://github.com/zpallday', '_blank'));

@@ -472,9 +472,6 @@ header button:hover {
     width: 30vw;
   }
 }
-.aboutPage {
-  margin: 0 auto !important;
-}
 @media (max-width: 500px) {
   .aboutPage {
     height: 30vh;
@@ -531,27 +528,23 @@ header button:hover {
     margin-top: 25%;
   }
 }
-@media (max-width: 500px) {
-  .teamMember .hover p {
-    margin-top: 25%;
-  }
-}
 .teamMember:hover .hover {
   opacity: 1;
 }
 .teamMember .icons {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
 }
 .teamMember .icons .fa-github:hover {
   color: grey;
+  cursor: pointer;
 }
 .teamMember .icons .fa-linkedin-in:hover {
   color: white;
   background-color: #0077b5;
   padding: 0 2%;
   border-radius: 10px;
+  cursor: pointer;
 }
 @media (max-width: 800px) {
   .teamMember .icons {
